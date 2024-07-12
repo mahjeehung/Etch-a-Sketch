@@ -11,9 +11,14 @@ const container = document.getElementsByClassName("container")
 function divMouseEnter(e){
     e.target.style.backgroundColor="blue";
   }
+function divMouseLeave(e){
+    e.target.style.backgroundColor="white";
+  }
 
 for (var k = 0; k < DIV.length; k++) {
     DIV[k].addEventListener('mouseenter', divMouseEnter);
+    DIV[k].addEventListener('mouseleave', divMouseLeave);
+
 }
     }
 // })
